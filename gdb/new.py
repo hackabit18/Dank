@@ -58,3 +58,22 @@ output_txt.close()
 new_output = open('output.txt', 'w')
 new_output.write(''.join(lines))
 new_output.close()
+
+output_txt = open('output.txt', 'r')
+new_output = open('logFile.txt', 'w')
+for line in output_txt:
+    line = line.strip()
+    if line == '':
+        new_output.write('@@@@@@#####`!`!')
+    else:
+        new_output.write(line+'`!`!')
+output_txt.close()
+new_output.close()
+
+datatypes_txt = open('datatypes.txt', 'r')
+new_datatypes = open('new_datatypes.txt', 'w')
+for line in datatypes_txt:
+    line = line.strip()
+    new_datatypes.write(line+'`!`!')
+datatypes_txt.close()
+new_datatypes.close()

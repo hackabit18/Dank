@@ -1,4 +1,4 @@
-/*var output_txt = "Breakpoint 1, main () at h.cpp:7!\
+/* var output_txt = "Breakpoint 1, main () at h.cpp:7!\
 7	    int a = 5;!\
 a = 32767!\
 b = 0!\
@@ -35,8 +35,6 @@ type = long"; */
 var output_txt = 'Breakpoint 11, main () at h.cpp:12!\
 12	    int x = fact(5);!\
 x = 0!\
-b = {1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5}!\
-c = 5!\
 uuuu!\
 Breakpoint 1, fact (n=5) at h.cpp:4!\
 4	    if(n == 1){!\
@@ -104,18 +102,16 @@ x = 120!\
 120[Inferior 1 (process 28720) exited normally]';
 
 var datatypes_txt = 'type = int!\
-type = int [25]!\
-type = int!\
-type = int';
+type = int!';
 
+var container = document.getElementById('container');
 var datatypes = datatypes_txt.split("!");
 var data = output_txt.split('!');
 var datatype_index = 0;
 var i;
-var acc = document.getElementById('acc');
+var accordion = document.getElementById('accordion');
 var currentFunction = ' ';
 var prevFunction = '';
-var temp_div;
 for(i=0; i<data.length; i++) {
     if(data[i] === 'uuuu') {
         continue;
@@ -126,21 +122,14 @@ for(i=0; i<data.length; i++) {
     var index = data[i].indexOf(' ');
     var str = data[i].substring(0, index);
     if(str === 'Breakpoint') {
+        
         currentFunction = functionName(data[i]);
         if(currentFunction !== prevFunction) {
-            if(i != 0) {
-                var temp_button = document.createElement('button');
-                temp_button.innerHTML = "End";
-                temp_div.appendChild(temp_button);
-            }
-            var head_button = document.createElement('button');
-            head_button.setAttribute('class', 'accordion headAccordion');
             prevFunction = currentFunction;
-            head_button.innerHTML = prevFunction;
-            acc.appendChild(head_button);
+            accordion.innerHTML += '<h3>' + prevFunction + '</h3>';
             var div = document.createElement('div');
-            acc.appendChild(div);
-            div.setAttribute('class', 'panel');
+            accordion.appendChild(div);
+            div.setAttribute('class', 'accordion');
         }
         i++;
         var divv = document.createElement('div');
@@ -148,16 +137,13 @@ for(i=0; i<data.length; i++) {
             forSingleElement('No locals', 'No locals variables in this scope', divv);
             continue;
         }
-        divv.setAttribute('class', 'panel');
-        var programLine = document.createElement('button');
-        programLine.setAttribute('class', 'accordion');
+        var programLine = document.createElement('h3');
         var temp_programLineType = data[i].substring(0, data[i].indexOf(' '));
         var temp_programLine = data[i].substring(data[i].indexOf(' '), );
         programLine.innerHTML = 'Before Line ' + temp_programLineType + ':' + temp_programLine;
         div.appendChild(programLine);
         div.appendChild(divv);
         i++;
-        temp_div = div;
         if(data[i] == 'No locals.') {
             forSingleElement('No locals', 'No locals variables in this scope', divv);
             continue;
@@ -231,15 +217,9 @@ for(i=0; i<data.length; i++) {
             else {
                 forSingleElement(data[i], datatypes[datatype_index], divv);
             }
-            divv.innerHTML += '<br/>';
             i++;
             datatype_index++;
         }
-    }
-    if(i == data.length-1) {
-        var temp_button = document.createElement('button');
-        temp_button.innerHTML = "End";
-        div.appendChild(temp_button);
     }
 }
 
@@ -247,7 +227,6 @@ for(i=0; i<data.length; i++) {
 function forSingleElement(name, type, div) {
     var button = document.createElement('button');
     button.style.margin = "10px";
-    button.style.marginLeft = "0";
     button.innerHTML = name;
     button.style.background = getRandomColor();
     button.setAttribute("title", type);
@@ -360,13 +339,7 @@ function return2DArray(s) {
 /* To display 1D arrays */
 function for1DArray(arr, name, type, div) {
     var length = arr.length;
-    var button = document.createElement('button');
-    button.style.marginLeft = "0";
-    button.style.marginRight = "0";
-    button.innerHTML = name;
-    button.style.background = getRandomColor();
-    button.setAttribute("title", type);
-    div.appendChild(button);
+    forSingleElement(name, type, divv);
     for(var i = 0; i < length; i++ ) {
         var button = document.createElement('button');
         button.innerHTML = arr[i];

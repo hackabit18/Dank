@@ -1,0 +1,468 @@
+Breakpoint 64, main () at h.cpp:67
+67	{ 
+No locals.
+
+Breakpoint 68, main () at h.cpp:68
+68	    int arr[] = {10, 7, 8, 9, 1, 5}; 
+arr = {4196976, 0, 4196032, 0, -6720, 32767}
+n = 0
+
+Breakpoint 69, main () at h.cpp:69
+69	    int n = sizeof(arr)/sizeof(arr[0]); 
+arr = {10, 7, 8, 9, 1, 5}
+n = 0
+
+Breakpoint 70, main () at h.cpp:70
+70	    quickSort(arr, 0, n-1); 
+arr = {10, 7, 8, 9, 1, 5}
+n = 6
+
+Breakpoint 36, quickSort (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:43
+43	    if (low < high) 
+No locals.
+
+Breakpoint 44, quickSort (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:47
+47	        int pi = partition(arr, low, high); 
+pi = 0
+
+Breakpoint 12, partition (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:20
+20	    int pivot = arr[high];    // pivot 
+pivot = 32767
+i = 0
+
+Breakpoint 21, partition (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:21
+21	    int i = (low - 1);  // Index of smaller element 
+pivot = 5
+i = 0
+
+Breakpoint 22, partition (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:23
+23	    for (int j = low; j <= high- 1; j++) 
+j = -7024
+pivot = 5
+i = -1
+
+Breakpoint 24, partition (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 0
+pivot = 5
+i = -1
+
+Breakpoint 24, partition (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 1
+pivot = 5
+i = -1
+
+Breakpoint 24, partition (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 2
+pivot = 5
+i = -1
+
+Breakpoint 24, partition (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 3
+pivot = 5
+i = -1
+
+Breakpoint 24, partition (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 4
+pivot = 5
+i = -1
+
+Breakpoint 28, partition (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:29
+29	            i++;    // increment index of smaller element 
+j = 4
+pivot = 5
+i = -1
+
+Breakpoint 30, partition (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:30
+30	            swap(&arr[i], &arr[j]); 
+j = 4
+pivot = 5
+i = 0
+
+Breakpoint 1, swap (a=0x7fffffffe4c0, b=0x7fffffffe4d0) at h.cpp:8
+8	    int t = *a; 
+t = 0
+
+Breakpoint 9, swap (a=0x7fffffffe4c0, b=0x7fffffffe4d0) at h.cpp:9
+9	    *a = *b; 
+t = 10
+
+Breakpoint 10, swap (a=0x7fffffffe4c0, b=0x7fffffffe4d0) at h.cpp:10
+10	    *b = t; 
+t = 10
+
+Breakpoint 11, swap (a=0x7fffffffe4c0, b=0x7fffffffe4d0) at h.cpp:11
+11	} 
+No locals.
+
+Breakpoint 31, partition (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:33
+33	    swap(&arr[i + 1], &arr[high]); 
+pivot = 5
+i = 0
+
+Breakpoint 1, swap (a=0x7fffffffe4c4, b=0x7fffffffe4d4) at h.cpp:8
+8	    int t = *a; 
+t = 10
+
+Breakpoint 9, swap (a=0x7fffffffe4c4, b=0x7fffffffe4d4) at h.cpp:9
+9	    *a = *b; 
+t = 7
+
+Breakpoint 10, swap (a=0x7fffffffe4c4, b=0x7fffffffe4d4) at h.cpp:10
+10	    *b = t; 
+t = 7
+
+Breakpoint 11, swap (a=0x7fffffffe4c4, b=0x7fffffffe4d4) at h.cpp:11
+11	} 
+No locals.
+
+Breakpoint 34, partition (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:34
+34	    return (i + 1); 
+pivot = 5
+i = 0
+
+Breakpoint 35, partition (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:35
+35	} 
+No locals.
+
+Breakpoint 48, quickSort (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:51
+51	        quickSort(arr, low, pi - 1); 
+pi = 1
+
+Breakpoint 36, quickSort (arr=0x7fffffffe4c0, low=0, high=0) at h.cpp:43
+43	    if (low < high) 
+No locals.
+
+Breakpoint 53, quickSort (arr=0x7fffffffe4c0, low=0, high=0) at h.cpp:54
+54	} 
+No locals.
+
+Breakpoint 52, quickSort (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:52
+52	        quickSort(arr, pi + 1, high); 
+pi = 1
+
+Breakpoint 36, quickSort (arr=0x7fffffffe4c0, low=2, high=5) at h.cpp:43
+43	    if (low < high) 
+No locals.
+
+Breakpoint 44, quickSort (arr=0x7fffffffe4c0, low=2, high=5) at h.cpp:47
+47	        int pi = partition(arr, low, high); 
+pi = 5
+
+Breakpoint 12, partition (arr=0x7fffffffe4c0, low=2, high=5) at h.cpp:20
+20	    int pivot = arr[high];    // pivot 
+pivot = 7
+i = 0
+
+Breakpoint 21, partition (arr=0x7fffffffe4c0, low=2, high=5) at h.cpp:21
+21	    int i = (low - 1);  // Index of smaller element 
+pivot = 7
+i = 0
+
+Breakpoint 22, partition (arr=0x7fffffffe4c0, low=2, high=5) at h.cpp:23
+23	    for (int j = low; j <= high- 1; j++) 
+j = 6295649
+pivot = 7
+i = 1
+
+Breakpoint 24, partition (arr=0x7fffffffe4c0, low=2, high=5) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 2
+pivot = 7
+i = 1
+
+Breakpoint 24, partition (arr=0x7fffffffe4c0, low=2, high=5) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 3
+pivot = 7
+i = 1
+
+Breakpoint 24, partition (arr=0x7fffffffe4c0, low=2, high=5) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 4
+pivot = 7
+i = 1
+
+Breakpoint 31, partition (arr=0x7fffffffe4c0, low=2, high=5) at h.cpp:33
+33	    swap(&arr[i + 1], &arr[high]); 
+pivot = 7
+i = 1
+
+Breakpoint 1, swap (a=0x7fffffffe4c8, b=0x7fffffffe4d4) at h.cpp:8
+8	    int t = *a; 
+t = 32767
+
+Breakpoint 9, swap (a=0x7fffffffe4c8, b=0x7fffffffe4d4) at h.cpp:9
+9	    *a = *b; 
+t = 8
+
+Breakpoint 10, swap (a=0x7fffffffe4c8, b=0x7fffffffe4d4) at h.cpp:10
+10	    *b = t; 
+t = 8
+
+Breakpoint 11, swap (a=0x7fffffffe4c8, b=0x7fffffffe4d4) at h.cpp:11
+11	} 
+No locals.
+
+Breakpoint 34, partition (arr=0x7fffffffe4c0, low=2, high=5) at h.cpp:34
+34	    return (i + 1); 
+pivot = 7
+i = 1
+
+Breakpoint 35, partition (arr=0x7fffffffe4c0, low=2, high=5) at h.cpp:35
+35	} 
+No locals.
+
+Breakpoint 48, quickSort (arr=0x7fffffffe4c0, low=2, high=5) at h.cpp:51
+51	        quickSort(arr, low, pi - 1); 
+pi = 2
+
+Breakpoint 36, quickSort (arr=0x7fffffffe4c0, low=2, high=1) at h.cpp:43
+43	    if (low < high) 
+No locals.
+
+Breakpoint 53, quickSort (arr=0x7fffffffe4c0, low=2, high=1) at h.cpp:54
+54	} 
+No locals.
+
+Breakpoint 52, quickSort (arr=0x7fffffffe4c0, low=2, high=5) at h.cpp:52
+52	        quickSort(arr, pi + 1, high); 
+pi = 2
+
+Breakpoint 36, quickSort (arr=0x7fffffffe4c0, low=3, high=5) at h.cpp:43
+43	    if (low < high) 
+No locals.
+
+Breakpoint 44, quickSort (arr=0x7fffffffe4c0, low=3, high=5) at h.cpp:47
+47	        int pi = partition(arr, low, high); 
+pi = 7
+
+Breakpoint 12, partition (arr=0x7fffffffe4c0, low=3, high=5) at h.cpp:20
+20	    int pivot = arr[high];    // pivot 
+pivot = 8
+i = 32767
+
+Breakpoint 21, partition (arr=0x7fffffffe4c0, low=3, high=5) at h.cpp:21
+21	    int i = (low - 1);  // Index of smaller element 
+pivot = 8
+i = 32767
+
+Breakpoint 22, partition (arr=0x7fffffffe4c0, low=3, high=5) at h.cpp:23
+23	    for (int j = low; j <= high- 1; j++) 
+j = -136497016
+pivot = 8
+i = 2
+
+Breakpoint 24, partition (arr=0x7fffffffe4c0, low=3, high=5) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 3
+pivot = 8
+i = 2
+
+Breakpoint 24, partition (arr=0x7fffffffe4c0, low=3, high=5) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 4
+pivot = 8
+i = 2
+
+Breakpoint 31, partition (arr=0x7fffffffe4c0, low=3, high=5) at h.cpp:33
+33	    swap(&arr[i + 1], &arr[high]); 
+pivot = 8
+i = 2
+
+Breakpoint 1, swap (a=0x7fffffffe4cc, b=0x7fffffffe4d4) at h.cpp:8
+8	    int t = *a; 
+t = 0
+
+Breakpoint 9, swap (a=0x7fffffffe4cc, b=0x7fffffffe4d4) at h.cpp:9
+9	    *a = *b; 
+t = 9
+
+Breakpoint 10, swap (a=0x7fffffffe4cc, b=0x7fffffffe4d4) at h.cpp:10
+10	    *b = t; 
+t = 9
+
+Breakpoint 11, swap (a=0x7fffffffe4cc, b=0x7fffffffe4d4) at h.cpp:11
+11	} 
+No locals.
+
+Breakpoint 34, partition (arr=0x7fffffffe4c0, low=3, high=5) at h.cpp:34
+34	    return (i + 1); 
+pivot = 8
+i = 2
+
+Breakpoint 35, partition (arr=0x7fffffffe4c0, low=3, high=5) at h.cpp:35
+35	} 
+No locals.
+
+Breakpoint 48, quickSort (arr=0x7fffffffe4c0, low=3, high=5) at h.cpp:51
+51	        quickSort(arr, low, pi - 1); 
+pi = 3
+
+Breakpoint 36, quickSort (arr=0x7fffffffe4c0, low=3, high=2) at h.cpp:43
+43	    if (low < high) 
+No locals.
+
+Breakpoint 53, quickSort (arr=0x7fffffffe4c0, low=3, high=2) at h.cpp:54
+54	} 
+No locals.
+
+Breakpoint 52, quickSort (arr=0x7fffffffe4c0, low=3, high=5) at h.cpp:52
+52	        quickSort(arr, pi + 1, high); 
+pi = 3
+
+Breakpoint 36, quickSort (arr=0x7fffffffe4c0, low=4, high=5) at h.cpp:43
+43	    if (low < high) 
+No locals.
+
+Breakpoint 44, quickSort (arr=0x7fffffffe4c0, low=4, high=5) at h.cpp:47
+47	        int pi = partition(arr, low, high); 
+pi = 8
+
+Breakpoint 12, partition (arr=0x7fffffffe4c0, low=4, high=5) at h.cpp:20
+20	    int pivot = arr[high];    // pivot 
+pivot = 9
+i = 0
+
+Breakpoint 21, partition (arr=0x7fffffffe4c0, low=4, high=5) at h.cpp:21
+21	    int i = (low - 1);  // Index of smaller element 
+pivot = 9
+i = 0
+
+Breakpoint 22, partition (arr=0x7fffffffe4c0, low=4, high=5) at h.cpp:23
+23	    for (int j = low; j <= high- 1; j++) 
+j = 0
+pivot = 9
+i = 3
+
+Breakpoint 24, partition (arr=0x7fffffffe4c0, low=4, high=5) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 4
+pivot = 9
+i = 3
+
+Breakpoint 31, partition (arr=0x7fffffffe4c0, low=4, high=5) at h.cpp:33
+33	    swap(&arr[i + 1], &arr[high]); 
+pivot = 9
+i = 3
+
+Breakpoint 1, swap (a=0x7fffffffe4d0, b=0x7fffffffe4d4) at h.cpp:8
+8	    int t = *a; 
+t = 0
+
+Breakpoint 9, swap (a=0x7fffffffe4d0, b=0x7fffffffe4d4) at h.cpp:9
+9	    *a = *b; 
+t = 10
+
+Breakpoint 10, swap (a=0x7fffffffe4d0, b=0x7fffffffe4d4) at h.cpp:10
+10	    *b = t; 
+t = 10
+
+Breakpoint 11, swap (a=0x7fffffffe4d0, b=0x7fffffffe4d4) at h.cpp:11
+11	} 
+No locals.
+
+Breakpoint 34, partition (arr=0x7fffffffe4c0, low=4, high=5) at h.cpp:34
+34	    return (i + 1); 
+pivot = 9
+i = 3
+
+Breakpoint 35, partition (arr=0x7fffffffe4c0, low=4, high=5) at h.cpp:35
+35	} 
+No locals.
+
+Breakpoint 48, quickSort (arr=0x7fffffffe4c0, low=4, high=5) at h.cpp:51
+51	        quickSort(arr, low, pi - 1); 
+pi = 4
+
+Breakpoint 36, quickSort (arr=0x7fffffffe4c0, low=4, high=3) at h.cpp:43
+43	    if (low < high) 
+No locals.
+
+Breakpoint 53, quickSort (arr=0x7fffffffe4c0, low=4, high=3) at h.cpp:54
+54	} 
+No locals.
+
+Breakpoint 52, quickSort (arr=0x7fffffffe4c0, low=4, high=5) at h.cpp:52
+52	        quickSort(arr, pi + 1, high); 
+pi = 4
+
+Breakpoint 36, quickSort (arr=0x7fffffffe4c0, low=5, high=5) at h.cpp:43
+43	    if (low < high) 
+No locals.
+
+Breakpoint 53, quickSort (arr=0x7fffffffe4c0, low=5, high=5) at h.cpp:54
+54	} 
+No locals.
+
+Breakpoint 53, quickSort (arr=0x7fffffffe4c0, low=4, high=5) at h.cpp:54
+54	} 
+No locals.
+
+Breakpoint 53, quickSort (arr=0x7fffffffe4c0, low=3, high=5) at h.cpp:54
+54	} 
+No locals.
+
+Breakpoint 53, quickSort (arr=0x7fffffffe4c0, low=2, high=5) at h.cpp:54
+54	} 
+No locals.
+
+Breakpoint 53, quickSort (arr=0x7fffffffe4c0, low=0, high=5) at h.cpp:54
+54	} 
+No locals.
+
+Breakpoint 71, main () at h.cpp:71
+71	    printf("Sorted array: n"); 
+arr = {1, 5, 7, 8, 9, 10}
+n = 6
+
+Breakpoint 72, main () at h.cpp:72
+72	    printArray(arr, n); 
+arr = {1, 5, 7, 8, 9, 10}
+n = 6
+
+Breakpoint 55, printArray (arr=0x7fffffffe4c0, size=6) at h.cpp:60
+60	    for (i=0; i < size; i++) 
+i = 32767
+
+Breakpoint 61, printArray (arr=0x7fffffffe4c0, size=6) at h.cpp:61
+61	        printf("%d ", arr[i]); 
+i = 0
+
+Breakpoint 61, printArray (arr=0x7fffffffe4c0, size=6) at h.cpp:61
+61	        printf("%d ", arr[i]); 
+i = 1
+
+Breakpoint 61, printArray (arr=0x7fffffffe4c0, size=6) at h.cpp:61
+61	        printf("%d ", arr[i]); 
+i = 2
+
+Breakpoint 61, printArray (arr=0x7fffffffe4c0, size=6) at h.cpp:61
+61	        printf("%d ", arr[i]); 
+i = 3
+
+Breakpoint 61, printArray (arr=0x7fffffffe4c0, size=6) at h.cpp:61
+61	        printf("%d ", arr[i]); 
+i = 4
+
+Breakpoint 61, printArray (arr=0x7fffffffe4c0, size=6) at h.cpp:61
+61	        printf("%d ", arr[i]); 
+i = 5
+
+Breakpoint 62, printArray (arr=0x7fffffffe4c0, size=6) at h.cpp:62
+62	    printf("n"); 
+i = 6
+
+Breakpoint 63, printArray (arr=0x7fffffffe4c0, size=6) at h.cpp:63
+63	} 
+No locals.
+
+Breakpoint 73, main () at h.cpp:73
+73	    return 0; 
+arr = {1, 5, 7, 8, 9, 10}
+n = 6
+Sorted array: n1 5 7 8 9 10 n[Inferior 1 (process 29672) exited normally]

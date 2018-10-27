@@ -1,0 +1,577 @@
+Breakpoint 1 at 0x40097e: file h.cpp, line 67.
+
+Breakpoint 1, main () at h.cpp:67
+67	{ 
+
+Breakpoint 1, main () at h.cpp:67
+67	{ 
+Breakpoint 2 at 0x4009b7: file h.cpp, line 69.
+
+Breakpoint 2, main () at h.cpp:69
+69	    int n = sizeof(arr)/sizeof(arr[0]); 
+arr = {4196976, 0, 4196032, 0, -6720, 32767}
+n = 0
+type = int [6]
+type = int
+Breakpoint 3 at 0x4009bf: file h.cpp, line 70.
+
+Breakpoint 3, main () at h.cpp:70
+70	    quickSort(arr, 0, n-1); 
+arr = {4196976, 0, 4196032, 0, -6720, 32767}
+n = 0
+type = int [6]
+type = int
+Breakpoint 4 at 0x4008d8: file h.cpp, line 47.
+Line 47 is not in `main()'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 4, quickSort (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:47
+47	        int pi = partition(arr, low, high); 
+pi = 0
+type = int
+Breakpoint 5 at 0x4007f4: file h.cpp, line 20.
+Line 20 is not in `quickSort(int*, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 5, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:20
+20	    int pivot = arr[high];    // pivot 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 6 at 0x40080d: file h.cpp, line 21.
+
+Breakpoint 6, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:21
+21	    int i = (low - 1);  // Index of smaller element 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 7 at 0x400816: file h.cpp, line 23.
+
+Breakpoint 7, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:23
+23	    for (int j = low; j <= high- 1; j++) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 8 at 0x40081e: file h.cpp, line 27.
+
+Breakpoint 8, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 9 at 0x40081e: file h.cpp, line 27.
+
+Breakpoint 8, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 10 at 0x40081e: file h.cpp, line 27.
+
+Breakpoint 8, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 11 at 0x40081e: file h.cpp, line 27.
+
+Breakpoint 8, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 12 at 0x40081e: file h.cpp, line 27.
+
+Breakpoint 8, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 13 at 0x400839: file h.cpp, line 29.
+
+Breakpoint 13, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:29
+29	            i++;    // increment index of smaller element 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 14 at 0x40083d: file h.cpp, line 30.
+
+Breakpoint 14, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:30
+30	            swap(&arr[i], &arr[j]); 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 15 at 0x4007c2: file h.cpp, line 8.
+Line 8 is not in `partition(int*, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 15, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:8
+8	    int t = *a; 
+t = 0
+type = int
+Breakpoint 16 at 0x4007cb: file h.cpp, line 9.
+
+Breakpoint 16, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:9
+9	    *a = *b; 
+t = 0
+type = int
+Breakpoint 17 at 0x4007d7: file h.cpp, line 10.
+
+Breakpoint 17, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:10
+10	    *b = t; 
+t = 0
+type = int
+Breakpoint 18 at 0x40087f: file h.cpp, line 33.
+Line 33 is not in `swap(int*, int*)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 18, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:33
+33	    swap(&arr[i + 1], &arr[high]); 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 19 at 0x4007c2: file h.cpp, line 8.
+Line 8 is not in `partition(int*, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 15, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:8
+8	    int t = *a; 
+t = 0
+type = int
+Breakpoint 20 at 0x4007cb: file h.cpp, line 9.
+
+Breakpoint 16, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:9
+9	    *a = *b; 
+t = 0
+type = int
+Breakpoint 21 at 0x4007d7: file h.cpp, line 10.
+
+Breakpoint 17, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:10
+10	    *b = t; 
+t = 0
+type = int
+Breakpoint 22 at 0x4008b6: file h.cpp, line 34.
+Line 34 is not in `swap(int*, int*)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 22, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:34
+34	    return (i + 1); 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 23 at 0x4008ef: file h.cpp, line 51.
+Line 51 is not in `partition(int*, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 23, quickSort (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:51
+51	        quickSort(arr, low, pi - 1); 
+pi = 0
+type = int
+Breakpoint 24 at 0x400906: file h.cpp, line 52.
+
+Breakpoint 24, quickSort (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:52
+52	        quickSort(arr, pi + 1, high); 
+pi = 0
+type = int
+Breakpoint 25 at 0x4008d8: file h.cpp, line 47.
+
+Breakpoint 4, quickSort (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:47
+47	        int pi = partition(arr, low, high); 
+pi = 0
+type = int
+Breakpoint 26 at 0x4007f4: file h.cpp, line 20.
+Line 20 is not in `quickSort(int*, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 5, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:20
+20	    int pivot = arr[high];    // pivot 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 27 at 0x40080d: file h.cpp, line 21.
+
+Breakpoint 6, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:21
+21	    int i = (low - 1);  // Index of smaller element 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 28 at 0x400816: file h.cpp, line 23.
+
+Breakpoint 7, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:23
+23	    for (int j = low; j <= high- 1; j++) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 29 at 0x40081e: file h.cpp, line 27.
+
+Breakpoint 8, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 30 at 0x40081e: file h.cpp, line 27.
+
+Breakpoint 8, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 31 at 0x40081e: file h.cpp, line 27.
+
+Breakpoint 8, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 32 at 0x40087f: file h.cpp, line 33.
+
+Breakpoint 18, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:33
+33	    swap(&arr[i + 1], &arr[high]); 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 33 at 0x4007c2: file h.cpp, line 8.
+Line 8 is not in `partition(int*, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 15, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:8
+8	    int t = *a; 
+t = 0
+type = int
+Breakpoint 34 at 0x4007cb: file h.cpp, line 9.
+
+Breakpoint 16, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:9
+9	    *a = *b; 
+t = 0
+type = int
+Breakpoint 35 at 0x4007d7: file h.cpp, line 10.
+
+Breakpoint 17, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:10
+10	    *b = t; 
+t = 0
+type = int
+Breakpoint 36 at 0x4008b6: file h.cpp, line 34.
+Line 34 is not in `swap(int*, int*)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 22, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:34
+34	    return (i + 1); 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 37 at 0x4008ef: file h.cpp, line 51.
+Line 51 is not in `partition(int*, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 23, quickSort (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:51
+51	        quickSort(arr, low, pi - 1); 
+pi = 0
+type = int
+Breakpoint 38 at 0x400906: file h.cpp, line 52.
+
+Breakpoint 24, quickSort (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:52
+52	        quickSort(arr, pi + 1, high); 
+pi = 0
+type = int
+Breakpoint 39 at 0x4008d8: file h.cpp, line 47.
+
+Breakpoint 4, quickSort (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:47
+47	        int pi = partition(arr, low, high); 
+pi = 0
+type = int
+Breakpoint 40 at 0x4007f4: file h.cpp, line 20.
+Line 20 is not in `quickSort(int*, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 5, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:20
+20	    int pivot = arr[high];    // pivot 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 41 at 0x40080d: file h.cpp, line 21.
+
+Breakpoint 6, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:21
+21	    int i = (low - 1);  // Index of smaller element 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 42 at 0x400816: file h.cpp, line 23.
+
+Breakpoint 7, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:23
+23	    for (int j = low; j <= high- 1; j++) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 43 at 0x40081e: file h.cpp, line 27.
+
+Breakpoint 8, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 44 at 0x40081e: file h.cpp, line 27.
+
+Breakpoint 8, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 45 at 0x40087f: file h.cpp, line 33.
+
+Breakpoint 18, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:33
+33	    swap(&arr[i + 1], &arr[high]); 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 46 at 0x4007c2: file h.cpp, line 8.
+Line 8 is not in `partition(int*, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 15, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:8
+8	    int t = *a; 
+t = 0
+type = int
+Breakpoint 47 at 0x4007cb: file h.cpp, line 9.
+
+Breakpoint 16, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:9
+9	    *a = *b; 
+t = 0
+type = int
+Breakpoint 48 at 0x4007d7: file h.cpp, line 10.
+
+Breakpoint 17, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:10
+10	    *b = t; 
+t = 0
+type = int
+Breakpoint 49 at 0x4008b6: file h.cpp, line 34.
+Line 34 is not in `swap(int*, int*)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 22, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:34
+34	    return (i + 1); 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 50 at 0x4008ef: file h.cpp, line 51.
+Line 51 is not in `partition(int*, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 23, quickSort (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:51
+51	        quickSort(arr, low, pi - 1); 
+pi = 0
+type = int
+Breakpoint 51 at 0x400906: file h.cpp, line 52.
+
+Breakpoint 24, quickSort (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:52
+52	        quickSort(arr, pi + 1, high); 
+pi = 0
+type = int
+Breakpoint 52 at 0x4008d8: file h.cpp, line 47.
+
+Breakpoint 4, quickSort (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:47
+47	        int pi = partition(arr, low, high); 
+pi = 0
+type = int
+Breakpoint 53 at 0x4007f4: file h.cpp, line 20.
+Line 20 is not in `quickSort(int*, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 5, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:20
+20	    int pivot = arr[high];    // pivot 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 54 at 0x40080d: file h.cpp, line 21.
+
+Breakpoint 6, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:21
+21	    int i = (low - 1);  // Index of smaller element 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 55 at 0x400816: file h.cpp, line 23.
+
+Breakpoint 7, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:23
+23	    for (int j = low; j <= high- 1; j++) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 56 at 0x40081e: file h.cpp, line 27.
+
+Breakpoint 8, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:27
+27	        if (arr[j] <= pivot) 
+j = 0
+pivot = 0
+i = 32767
+type = int
+type = int
+type = int
+Breakpoint 57 at 0x40087f: file h.cpp, line 33.
+
+Breakpoint 18, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:33
+33	    swap(&arr[i + 1], &arr[high]); 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 58 at 0x4007c2: file h.cpp, line 8.
+Line 8 is not in `partition(int*, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 15, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:8
+8	    int t = *a; 
+t = 0
+type = int
+Breakpoint 59 at 0x4007cb: file h.cpp, line 9.
+
+Breakpoint 16, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:9
+9	    *a = *b; 
+t = 0
+type = int
+Breakpoint 60 at 0x4007d7: file h.cpp, line 10.
+
+Breakpoint 17, swap (a=0x4006c0 <_start>, b=0x400a70 <__libc_csu_init>) at h.cpp:10
+10	    *b = t; 
+t = 0
+type = int
+Breakpoint 61 at 0x4008b6: file h.cpp, line 34.
+Line 34 is not in `swap(int*, int*)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 22, partition (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:34
+34	    return (i + 1); 
+pivot = 0
+i = 32767
+type = int
+type = int
+Breakpoint 62 at 0x4008ef: file h.cpp, line 51.
+Line 51 is not in `partition(int*, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 23, quickSort (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:51
+51	        quickSort(arr, low, pi - 1); 
+pi = 0
+type = int
+Breakpoint 63 at 0x400906: file h.cpp, line 52.
+
+Breakpoint 24, quickSort (arr=0x4006c0 <_start>, low=0, high=4196976) at h.cpp:52
+52	        quickSort(arr, pi + 1, high); 
+pi = 0
+type = int
+Breakpoint 64 at 0x4009d6: file h.cpp, line 71.
+Line 71 is not in `quickSort(int*, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 64, main () at h.cpp:71
+71	    printf("Sorted array: n"); 
+arr = {4196976, 0, 4196032, 0, -6720, 32767}
+n = 0
+type = int [6]
+type = int
+Breakpoint 65 at 0x4009e5: file h.cpp, line 72.
+
+Breakpoint 65, main () at h.cpp:72
+72	    printArray(arr, n); 
+arr = {4196976, 0, 4196032, 0, -6720, 32767}
+n = 0
+type = int [6]
+type = int
+Breakpoint 66 at 0x40092e: file h.cpp, line 60.
+Line 60 is not in `main()'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 66, printArray (arr=0x4006c0 <_start>, size=0) at h.cpp:60
+60	    for (i=0; i < size; i++) 
+i = 0
+type = int
+Breakpoint 67 at 0x400937: file h.cpp, line 61.
+
+Breakpoint 67, printArray (arr=0x4006c0 <_start>, size=0) at h.cpp:61
+61	        printf("%d ", arr[i]); 
+i = 0
+type = int
+Breakpoint 68 at 0x400937: file h.cpp, line 61.
+
+Breakpoint 67, printArray (arr=0x4006c0 <_start>, size=0) at h.cpp:61
+61	        printf("%d ", arr[i]); 
+i = 0
+type = int
+Breakpoint 69 at 0x400937: file h.cpp, line 61.
+
+Breakpoint 67, printArray (arr=0x4006c0 <_start>, size=0) at h.cpp:61
+61	        printf("%d ", arr[i]); 
+i = 0
+type = int
+Breakpoint 70 at 0x400937: file h.cpp, line 61.
+
+Breakpoint 67, printArray (arr=0x4006c0 <_start>, size=0) at h.cpp:61
+61	        printf("%d ", arr[i]); 
+i = 0
+type = int
+Breakpoint 71 at 0x400937: file h.cpp, line 61.
+
+Breakpoint 67, printArray (arr=0x4006c0 <_start>, size=0) at h.cpp:61
+61	        printf("%d ", arr[i]); 
+i = 0
+type = int
+Breakpoint 72 at 0x400937: file h.cpp, line 61.
+
+Breakpoint 67, printArray (arr=0x4006c0 <_start>, size=0) at h.cpp:61
+61	        printf("%d ", arr[i]); 
+i = 0
+type = int
+Breakpoint 73 at 0x40096a: file h.cpp, line 62.
+
+Breakpoint 73, printArray (arr=0x4006c0 <_start>, size=0) at h.cpp:62
+62	    printf("n"); 
+i = 0
+type = int
+Breakpoint 74 at 0x4009f6: file h.cpp, line 73.
+Line 73 is not in `printArray(int*, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 74, main () at h.cpp:73
+73	    return 0; 
+arr = {4196976, 0, 4196032, 0, -6720, 32767}
+n = 0
+type = int [6]
+type = int

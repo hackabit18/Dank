@@ -9,7 +9,7 @@ code. Teachers, moocs and youtube channels try to do that whether by drawing man
 
 gcc and gdb(GNU debugger), python (Importing: subprocess), PHP, JavaScript, AWS Server, CSS, HTML
 
-#Instructions to run GameToDebug#
+#INSTRUCTIONS TO RUN gameToDebug#
 
 * Clone the repository.
 * Put the code in the h.cpp file in the gdb folder.
@@ -19,12 +19,12 @@ gcc and gdb(GNU debugger), python (Importing: subprocess), PHP, JavaScript, AWS 
 * We're sending a request from AWS to localhost using a POST request, thus we get the required log files which we parse in PHP, and then we read them as lists in JavaScript.
 * Finally, we use HTML, CSS and JavaScript to display the debugging details in an accordion format on the webpage. For this, open temp_code.html.
 
-#Application and Future#
+#APPLICATIONS AND FUTURE SCOPE#
 
 gameToDebug will help anyone who is having a hard time solving bugs in his code. Using our application teachers and students can save a lot of time when try to teach and understand the algorithms and data-structures. We believe that our application can help anyone who is try to better understand his code. 
   
   gameToDebug has many future scopes. Currently it has support for only C/C++ but it can be extended to many other languages. We are still having a hard time to figuring out the most appropriate visualise for various data structures present especially when it comes to N dimensional arrays and lists. We are successfully debugging most of the code that anyone can write using C/C++ but are debugger is still not full proof. We believe that working further on this project can revolutionize the way we study and understand our code.
 
-#Copyright Information#
+#COPYRIGHT INFORMATION#
 
 All the code in this repository is our own and is using open-source softwares

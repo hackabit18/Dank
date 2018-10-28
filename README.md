@@ -1,19 +1,22 @@
 # Dank
 
-#IDEA#
+## Idea
 
-While studing various algorithms and data structures understanding of the code written greatly depends on how well we visualise the
-code. Teachers, moocs and youtube channels try to do that whether by drawing manually or using a software to do that but there is no generalised way to do this yet. Our idea 'gameToDebug' is solving this problem. Our debugger helps the user to visualise code using graphics and shapes, what is happening in your line of code, which function you are in, what variables are changing in that line of code, we are showing it all using a generalised graphical representation.
+When we write a computer program there are many things that our IDE handles in the background. The user only gets the final output but what if the output is not right? What if you can't understand what is going on in your program. Our idea will help us to visualize your code instantly as soon as you enter each line. All the variables, data structures, loops will be shown to you graphically with each iteration. What's inside your variable, what is happening in a recursion, how the table changes when you work on dynamic programming related codes. All in all, A Game To Debug is a C++ visual debugger. The debugger will use a universal way to handle all sorts of code.
 
-#TOOLS & TECHNOLOGIES#
+## Tools and Technologies
 
-gcc and gdb(GNU debugger), python (Importing: subprocess), PHP, JavaScript, AWS Server, CSS, HTML
+* GDB (GNU Debugger)
+* Python
+* PHP
+* HTML, CSS
+* JavaScript
 
-#INSTRUCTIONS TO RUN gameToDebug#
+## Instructions to Run
 * The application is hosted at dank.gametodebug.tech
 * You can add your code directly to the code editor.
 
-OR
+### OR
 
 * Clone the repository.
 * Put the code in the h.cpp file in the gdb folder.
@@ -23,12 +26,11 @@ OR
 * We're sending a request from AWS to localhost using a POST request, thus we get the required log files which we parse in PHP, and then we read them as lists in JavaScript.
 * Finally, we use HTML, CSS and JavaScript to display the debugging details in an accordion format on the webpage. For this, open temp_code.html.
 
-#APPLICATIONS AND FUTURE SCOPE#
+# Applications and Future Scope
 
-gameToDebug will help anyone who is having a hard time solving bugs in his code. Using our application teachers and students can save a lot of time when try to teach and understand the algorithms and data-structures. We believe that our application can help anyone who is try to better understand his code. 
-  
-  gameToDebug has many future scopes. Currently it has support for only C/C++ but it can be extended to many other languages. We are still having a hard time to figuring out the most appropriate visualise for various data structures present especially when it comes to N dimensional arrays and lists. We are successfully debugging most of the code that anyone can write using C/C++ but are debugger is still not full proof. We believe that working further on this project can revolutionize the way we study and understand our code.
+Game To Debug will help anyone who is having a hard time solving bugs in his code. Using our application teachers and students can save a lot of time when try to teach and understand the algorithms and data-structures. We believe that our application can help anyone who is try to better understand his code. 
+Game To Debug has many future scopes. Currently it has support for only C/C++ but it can be extended to many other languages. We are still having a hard time to figuring out the most appropriate visualise for various data structures present especially when it comes to N dimensional arrays and lists. We are successfully debugging most of the code that anyone can write using C/C++ but are debugger is still not full proof. We believe that working further on this project can revolutionize the way we study and understand our code.
 
-#COPYRIGHT INFORMATION#
+# COPYRIGHT INFORMATION
 
 All the code in this repository is our own and is using open-source softwares

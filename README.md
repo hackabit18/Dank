@@ -10,6 +10,10 @@ code. Teachers, moocs and youtube channels try to do that whether by drawing man
 gcc and gdb(GNU debugger), python (Importing: subprocess), PHP, JavaScript, AWS Server, CSS, HTML
 
 #INSTRUCTIONS TO RUN gameToDebug#
+* The application is hosted at dank.gametodebug.tech
+* You can add your code directly to the code editor.
+
+OR
 
 * Clone the repository.
 * Put the code in the h.cpp file in the gdb folder.

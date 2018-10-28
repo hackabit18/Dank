@@ -1,103 +1,334 @@
+    
 
 
+         
+  
+  
 <?php 
-$myfile = fopen("h.cpp", "w") or die("Unable to write file!");
-//$txt = "Jsdassdohn Doe\n";
-//fwrite($myfile, $txt);
-//$txt = "Jane Doe\n";
-//echo shell_exec("cd /var/www/html && python new.py");
-//echo "fsafsafsa";*/
-fwrite($myfile, $_POST["topic"]);
-fclose($myfile);
-
-//echo "wert";
-$haha=(string) shell_exec(" python3 requesttohome.py");
-//echo $haha;
-$myfile2= fopen("allthestuff.txt", "w") or die("Unable to write file!");
-//$txt = "Jsdassdohn Doe\n";
-//fwrite($myfile, $txt);
-//$txt = "Jane Doe\n";
-//echo shell_exec("cd /var/www/html && python new.py");
-//echo "fsafsafsa";*/
-fwrite($myfile2, $haha);
-fclose($myfile2);
+//echo shell_exec("python3 /var/www/html/speechy.py");
+//echo "2";
 
 
+ ?>
 
+<!DOCTYPE html>
 
+<html>
 
+    <head>
+<script src="ace/ext-language_tools.js" ></script>
+ <title>Code Editor</title>
+<style type="text/css" media="screen">
+    #editor { 
+position:absolute;       
+      top:100px;
+width:60%;
 
+height:600px;
+        left: 10%;
+    }
+ #editor2 { 
+position:absolute;       
+      top:100px;
+margin-left:2px;
+width:20%;
 
-
-
-
-
-$myfile2= fopen("allthestuff.txt", "r") or die("Unable to write file!");
-//$txt = "Jsdassdohn Doe\n";
-//fwrite($myfile, $txt);
-//$txt = "Jane Doe\n";
-//echo shell_exec("cd /var/www/html && python new.py");
-//echo "fsafsafsa";*/
-//$myarr=  array("");
-
-$mainstr="";
-if ($myfile2) {
-    while (($line = fgets($myfile2)) !== false) {
-        $mainstr=$mainstr.$line;
+height:600px;
+        right: 10%;
     }
 
-    //fclose($myfile2);
-/*$ll= "uuuuu".join($myarr);
-$lla= explode("uuuuu",$ll)[2];
-$llb=explode("\n",$lla);
-echo $llb[1];
+#editor3 { 
+position:absolute;       
+      top:700px;
+margin-left:2px;
+width:80%;
 
-$length = count($llb);
-for ($i = 0; $i < $length; $i++) {
-echo $i;
-*/
+height:90px;
+        left: 10%;
+    }
 
-} else {
-echo "error aa gya bhai";  
-  // error opening the file.
-} 
-fclose($myfile2);
-//$mai=$mainstr;
-//$error=explode("@@!!###",$mai)[1];
-$error="Compiled Succesfully.";
-function clean($string) {
-   $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
 
-   return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
+</style>
+<style>
+                        body {
+                                padding: 20px;
+background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg);
+                        }
+                        button {
+                                margin-top: 720px;
+                                line-height: 60px;
+                                font-weight: bold;
+                                padding: 0 40px;
+                                border: none;
+                        }
+                </style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <title>Live input record and playback</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  textarea {
+      resize: none;
+  }
+  </style>
+
+    </head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+ 
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
-$error=clean($error);
-if (strlen(explode("@@!!###",$mainstr)[1])>6){
-$error="Compile Time Error Detected";
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-$mainstr=explode("@@!!###",$mainstr)[0];
-//$bakar='holaaaaaa';
-//$error=explode("@@!!###",$mai)[1];
-$breakpo= explode("tttttttttt",explode("uuuuu",$mainstr)[1])[0];
-$newdat= explode("ppppp",explode("tttttttttt",$mainstr)[1])[1];
-echo explode("\n",$newdat)[0];
-$txt1="var output_txt = '".$breakpo."';";
-$txt2="\nvar datatypes_txt='".explode("\n",$newdat)[0]."';";
-$txt3="
-var datatypes = datatypes_txt.split('`!`!');
-var data = output_txt.split('`!`!');
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+
+<form id="topic_search_form" onSubmit="return false;" style="margin-top:790px;position:relative;left:45%;"  name="topic_search_form" action="">
+
+<input type="submit" class="topic_submit" name="topic_submit" value="Execute" >
+
+ </form>
+    <script>
+var arrq=[];
+var outputfile=[];
+$(function() {
+
+//$("#lolwut2").load("ace_edit.php");  
+//var editor = ace.edit("editor");
+ //   editor.setTheme("ace/theme/monokai");
+   // editor.session.setMode("ace/mode/javascript");
+//alert(editor.getValue());
+//var code = editor.getValue();
+//alert("www");
+//alert(code)
+$(".topic_submit").click(function() {    
+//alert("clicked");  
+   // var topic = $("#topic").val();
+var topic = (editor.getValue());
+//alert(topic);
+var topic2= (editortxt.getValue());
+    refresh = 'false'
+ $.ajax({  
+        type: "POST",
+      //  url:"fdf9924a.ngrok.io/sendhelp/php123.php",  
+        url: "testthing123321.php?idd="+topic,  
+        data: {'topic': topic+"@@@###"+topic2},  
+        success: function(dataString) {  
+//alert(dataString);
+//document.getElementById("lolwut3").innerHTML = dataString.toString();
+//alert("boa");
+$("#lolwut").load("graphic.php");
+//window.location='graphic.php';
+ arrq=dataString.toString().split("ppppp")[1].split("</stdio.h>")[0].toString().split("\n");
+document.cookie = "username="+arrq[0]+"; ";
+ outputfile= dataString.toString().split("tttttttttt")[0].split("uuuuu")[2].split("\n");
+//alert(dataString.toString().split("tttttttttt")[0].split("uuuuu")[1].split("\n")[4]);
+//var newarr=[];
+var k="";
+for (i = 0; i < outputfile.length; i++) {
+  if (outputfile[i]==k){
+
+outputfile[i]="@@@@@@#####";
+
+}
+
+//alert(outputfile[i]+outputfile[i].length);
+ //window.location = "indexlatest.php";
+//alert(outputfile[i]);
+//////////////////////alert(arr[i]);
+}
+//  alert(outputfile[3]);              
+document.getElementById("clicker").click();
+$("#container").append("<b>Appended text</b>");
+
+      //      alert("boa");
+//alert(dataString);
+        },    
+
+                            error: function() {
+
+                              alert("not so boa!");
+
+                            }
+
+                          });
+ 
+    });  
+});
+
+     
+//alert(outputfile[3]);
+
+    </script>
+
+<div id="div1"></div>
+<h2 id="clicker" onclick="alert(arrq[9]);lolhaha(outputfile,arrq);window.location='graphic.php';" ></h2>
+<header>
+  <h2 id="lolwut">.</h2>
+</header>
+
+<h2 id="lolwut2">.</h2>
+<h2 id="lolwut3">.</h2>
+
+<style type="text/css" media="screen">
+.ace_editor {
+                border: 1px solid lightgray;
+           //     margin: auto;
+                height: 200px;
+                width: 100%;
+        }
+        .scrollmargin {
+                height: 200px;
+        //text-align: center;
+        }
+
+    </style>    
+<div id="editor">#include &ltiostream&gt
+using namespace std;
+
+int main() {
+	
+	// Insert your code here
+}
+</div>
+<pre id="editor2">
+Input Text
+</pre>
+<pre id="editor3">
+Response log
+</pre>
+
+
+
+
+
+
+
+<script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/javascript");
+	// var editor = ace.edit(document.getElementById('test'));
+	editor.getSession().setUseWorker(false);
+	editor.setOptions({fontSize:"20pt"});
+	//ace.require("ace/ext/language_tools");
+editor.setOptions({ enableBasicAutocompletion: true });
+var editortxt = ace.edit("editor2");
+    editortxt.setTheme("ace/theme/monokai");
+    editortxt.session.setMode("ace/mode/javascript");
+        // var editor = ace.edit(document.getElementById('test'));
+        editortxt.getSession().setUseWorker(false);
+editortxt.setOptions({fontSize:"18pt"});
+var editor21 = ace.edit("editor3");
+    editor21.setTheme("ace/theme/monokai");
+    editor21.session.setMode("ace/mode/javascript");
+        // var editor = ace.edit(document.getElementById('test'));
+        editor21.getSession().setUseWorker(false);
+editor21.setOptions({fontSize:"15pt"});
+//alert (editor.getValue());
+</script>
+
+
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+		<script
+			src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+			integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+			crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+ 
+
+        
+                
+              <script type="text/javascript" >
+//lolhaha(2,3);
+//alert("ttteee");
+
+
+
+
+<script>
+///alert("wwww");
+//alert(editor.getValue(););
+function lolhaha(data,datatypes){
+
+
+alert(data.toString());
+
+alert(datatypes.toString());
+
+
+
+
+
+
+
 var datatype_index = 0;
 var i;
 var acc = document.getElementById('acc');
 var currentFunction = ' ';
 var prevFunction = '';
 var temp_div;
-
-
-(editor21.setValue('$error',-1));
-//alert(topic);
-
-
-
 for(i=0; i<data.length; i++) {
     if(data[i] === '@@@@@@#####') {
         continue;
@@ -112,7 +343,7 @@ for(i=0; i<data.length; i++) {
         if(currentFunction !== prevFunction) {
             if(i != 0) {
                 var temp_button = document.createElement('button');
-                temp_button.innerHTML = 'End';
+                temp_button.innerHTML = "End";
                 temp_div.appendChild(temp_button);
             }
             var head_button = document.createElement('button');
@@ -121,7 +352,7 @@ for(i=0; i<data.length; i++) {
             head_button.innerHTML = prevFunction;
             acc.appendChild(head_button);
             var div = document.createElement('div');
-acc.appendChild(div);
+            acc.appendChild(div);
             div.setAttribute('class', 'panel');
         }
         i++;
@@ -145,7 +376,7 @@ acc.appendChild(div);
             continue;
         }
         while(data[i] !== '@@@@@@#####') {
- if(i == data.length-1)
+            if(i == data.length-1)
                 break;
 
             // Checking if the variable is a string array
@@ -219,7 +450,7 @@ acc.appendChild(div);
     }
     if(i == data.length-1) {
         var temp_button = document.createElement('button');
-        temp_button.innerHTML = 'End';
+        temp_button.innerHTML = "End";
         div.appendChild(temp_button);
     }
 }
@@ -227,10 +458,10 @@ acc.appendChild(div);
 /* To display single element */
 function forSingleElement(name, type, div) {
     var button = document.createElement('button');
-    button.style.margin = '10px';
+    button.style.margin = "10px";
     button.innerHTML = name;
     button.style.background = getRandomColor();
-    button.setAttribute('title', type);
+    button.setAttribute("title", type);
     div.appendChild(button);
 }
 
@@ -302,7 +533,7 @@ function returnArray(s) {
     var firstIndex = s.indexOf('{');
     var lastIndex = s.lastIndexOf('}');
     var str = s.substring(firstIndex + 1, lastIndex);
-    var arr = str.split(',');
+    var arr = str.split(",");
     for(var i = 0; i < arr.length; i++){
         arr[i] = arr[i].trim();
     }
@@ -344,7 +575,7 @@ function for1DArray(arr, name, type, div) {
     for(var i = 0; i < length; i++ ) {
         var button = document.createElement('button');
         button.innerHTML = arr[i];
-        button.setAttribute('title', type);
+        button.setAttribute("title", type);
         button.style.background = getRandomColor();
         div.appendChild(button);
     }
@@ -388,13 +619,13 @@ function for1DVector(arr, name, type, div){
     button.innerHTML = name;
     button.setAttribute('class', 'vector_button');
     button.style.background = getRandomColor();
-    button.setAttribute('title', type);
+    button.setAttribute("title", type);
     div.appendChild(button);
     for(var i = 0; i < length; i++ ){
         var but = document.createElement('button');
         but.setAttribute('class', 'vector_button');
         but.innerHTML = arr[i];
-        but.setAttribute('title', type);
+        but.setAttribute("title", type);
         but.style.background = getRandomColor();
         div.appendChild(but);
     }
@@ -447,27 +678,56 @@ function getRandomColor() {
         color += letters[Math.floor(Math.random() * letters.length)];
     }
     return color;
-}";
-
-$txt=$txt1.$txt2.$txt3;
-$myfile = fopen("temp_button.js", "w") or die("Unable to write file!");
-//$txt = "Jsdassdohn Doe\n";
-fwrite($myfile, $txt);
-//$txt = "Jane Doe\n";
-//echo shell_exec("cd /var/www/html && python new.py");
-//echo "fsafsafsa";*/
-//fwrite($myfile, $_POST["topic"]);
-fclose($myfile);
+}
 
 
 
 
 
+alert("45");
+
+alert(datatypes.toString());
+$(document).ready(function(){
+alert("2");
+  //  $("button").click(function(){
+        $("#div1").load("indice.php");
+  
+});
+
+}
+
+
+</script>
+
+
+
+<div class="acc" id="acc"></div>
+		//<script src="js/temp_button.js"></script>
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+        </script>
 
 
 
 
+<script>$("#container").append('<b>Appended text</b>');
+</script>    
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="Gruntfile.js"></script>
 
+</body>
 
-?>
+</html>

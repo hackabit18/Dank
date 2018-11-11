@@ -31,3 +31,7 @@ When we write a computer program there are many things that our IDE handles in t
 Game To Debug will help anyone who is having a hard time solving bugs in his code. Using our application teachers and students can save a lot of time when try to teach and understand the algorithms and data-structures. We believe that our application can help anyone who is try to better understand his code. 
 Game To Debug has many future scopes. Currently it has support for only C/C++ but it can be extended to many other languages. We are still having a hard time to figuring out the most appropriate visualise for various data structures present especially when it comes to N dimensional arrays and lists. We are successfully debugging most of the code that anyone can write using C/C++ but are debugger is still not full proof. We believe that working further on this project can revolutionize the way we study and understand our code.
 
+## Contributors
+* Madhav Kauntia (https://github.com/madhavkauntia)
+* Chaitanya Tyagi (https://github.com/chay2199)
+* Kashish Panwar

@@ -1,0 +1,131 @@
+Breakpoint 1 at 0x766: file h.cpp, line 35.
+
+Breakpoint 1, main () at h.cpp:35
+35	{ 
+
+Breakpoint 1, main () at h.cpp:35
+35	{ 
+arr = {1431652384, 21845, 1431651744, 21845, -6944}
+n = 32767
+x = 0
+result = 0
+type = int [5]
+type = int
+type = int
+type = int
+Breakpoint 2 at 0x555555554775: file h.cpp, line 36.
+
+Breakpoint 2, main () at h.cpp:36
+36	   int arr[] = {2, 3, 4, 10, 40}; 
+arr = {1431652384, 21845, 1431651744, 21845, -6944}
+n = 32767
+x = 0
+result = 0
+type = int [5]
+type = int
+type = int
+type = int
+Breakpoint 3 at 0x555555554798: file h.cpp, line 37.
+
+Breakpoint 3, main () at h.cpp:37
+37	   int n = sizeof(arr)/ sizeof(arr[0]); 
+arr = {1431652384, 21845, 1431651744, 21845, -6944}
+n = 32767
+x = 0
+result = 0
+type = int [5]
+type = int
+type = int
+type = int
+Breakpoint 4 at 0x55555555479f: file h.cpp, line 38.
+
+Breakpoint 4, main () at h.cpp:38
+38	   int x = 10; 
+arr = {1431652384, 21845, 1431651744, 21845, -6944}
+n = 32767
+x = 0
+result = 0
+type = int [5]
+type = int
+type = int
+type = int
+Breakpoint 5 at 0x5555555547a6: file h.cpp, line 39.
+
+Breakpoint 5, main () at h.cpp:39
+39	   int result = binarySearch(arr, 0, n-1, x); 
+arr = {1431652384, 21845, 1431651744, 21845, -6944}
+n = 32767
+x = 0
+result = 0
+type = int [5]
+type = int
+type = int
+type = int
+Breakpoint 6 at 0x5555555546cb: file h.cpp, line 12.
+Line 12 is not in `main()'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 6, binarySearch (arr=0x5555555545a0 <_start>, l=21845, r=1431652384, x=0) at h.cpp:12
+12	        int mid = l + (r - l)/2; 
+mid = 0
+type = int
+Breakpoint 7 at 0x5555555546e4: file h.cpp, line 16.
+
+Breakpoint 7, binarySearch (arr=0x5555555545a0 <_start>, l=21845, r=1431652384, x=0) at h.cpp:16
+16	        if (arr[mid] == x)   
+mid = 0
+type = int
+Breakpoint 8 at 0x555555554704: file h.cpp, line 21.
+
+Breakpoint 8, binarySearch (arr=0x5555555545a0 <_start>, l=21845, r=1431652384, x=0) at h.cpp:21
+21	        if (arr[mid] > x)  
+mid = 0
+type = int
+Breakpoint 9 at 0x55555555473d: file h.cpp, line 26.
+
+Breakpoint 9, binarySearch (arr=0x5555555545a0 <_start>, l=21845, r=1431652384, x=0) at h.cpp:26
+26	        return binarySearch(arr, mid+1, r, x); 
+mid = 0
+type = int
+Breakpoint 10 at 0x5555555546cb: file h.cpp, line 12.
+
+Breakpoint 6, binarySearch (arr=0x5555555545a0 <_start>, l=21845, r=1431652384, x=0) at h.cpp:12
+12	        int mid = l + (r - l)/2; 
+mid = 0
+type = int
+Breakpoint 11 at 0x5555555546e4: file h.cpp, line 16.
+
+Breakpoint 7, binarySearch (arr=0x5555555545a0 <_start>, l=21845, r=1431652384, x=0) at h.cpp:16
+16	        if (arr[mid] == x)   
+mid = 0
+type = int
+Breakpoint 12 at 0x5555555546ff: file h.cpp, line 17.
+
+Breakpoint 12, binarySearch (arr=0x5555555545a0 <_start>, l=21845, r=1431652384, x=0) at h.cpp:17
+17	            return mid; 
+mid = 0
+type = int
+Breakpoint 13 at 0x5555555547c7: file h.cpp, line 40.
+Line 40 is not in `binarySearch(int*, int, int, int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 13, main () at h.cpp:40
+40	   (result == -1)? printf("Element is not present in array") 
+arr = {1431652384, 21845, 1431651744, 21845, -6944}
+n = 32767
+x = 0
+result = 0
+type = int [5]
+type = int
+type = int
+type = int
+Breakpoint 14 at 0x5555555547f6: file h.cpp, line 43.
+
+Breakpoint 14, main () at h.cpp:43
+43	   return 0; 
+arr = {1431652384, 21845, 1431651744, 21845, -6944}
+n = 32767
+x = 0
+result = 0
+type = int [5]
+type = int
+type = int
+type = int

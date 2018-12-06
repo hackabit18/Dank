@@ -1,0 +1,112 @@
+const Pulse = React.createClass({
+
+	propTypes: {
+		delay: React.PropTypes.number	
+	},
+	
+	getDefaultProps() {
+		return {
+			delay: 0
+		};
+	},
+	
+	getInitialState() {
+		return {
+			pulsing: false
+		};
+	},
+	
+	componentDidMount() {
+		this.schedulePulse(this.props.delay);
+	},
+	
+	schedulePulse(delay = 1000) {
+		setTimeout(this.startPulse, delay);
+	},
+	
+	startPulse() {
+		this.setState({ pulsing: true });	
+	},
+	
+	onPulseEnd() {
+		$(this.refs.pulse).addClass('reset');
+		this.setState({ pulsing: false });
+		this.schedulePulse();
+	},
+	
+	render() {
+		return (
+			<div ref="pulse" 
+					 onTransitionEnd={this.onPulseEnd} 
+					 className={this.getPulseClasses()}>
+				{this.props.children}
+				{this.renderPulse()}
+			</div>
+		);
+	},
+	
+	getPulseClasses() {
+		return `shape-wrapper${this.state.pulsing ? ' pulsing' : ''}`;
+	},
+	
+	renderPulse() {
+		return (
+			<div className="shape-pulse">
+					{this.getClonedChild()}
+			</div>
+		);
+	},
+
+	getClonedChild() {
+		return React.cloneElement(this.props.children);
+	}
+	
+});
+
+const Root = React.createClass({
+    render() {
+        return (
+					<div id="root-element">
+						{this.renderCircle()}
+						{this.renderHeart()}
+						{this.renderSquare()}
+					</div>
+				);
+    },
+	
+		renderCircle() {
+			return (
+				<div className="shape-container">
+					<Pulse delay={1000}>
+						<div className="shape circle"/>
+					</Pulse>
+				</div>
+			);
+		},
+	
+		renderHeart() {
+			return (
+				<div className="shape-container">
+					<Pulse delay={1200}>
+						<div className="shape heart">
+							<div/>
+							<div/>
+							<div/>
+						</div>
+					</Pulse>
+				</div>
+			);
+		},
+	
+	renderSquare() {
+		return (
+			<div className="shape-container">
+				<Pulse delay={1400}>
+					<div className="shape square"/>
+				</Pulse>
+			</div>
+		);
+	}
+});
+ 
+ReactDOM.render(<Root/>, document.body);

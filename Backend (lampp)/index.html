@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add React in One Minute</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript" src="data.json"></script>
+    <div id="container"></div>
+    <script>
+      $.getJSON("http://localhost:8888/data.json", function(data) {
+        var d = '';
+        $.each( data, function( key, val ) {
+          $(data).appendTo("body");
+        });
+      });
+    </script>
+  </body>
+</html>

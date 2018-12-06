@@ -1,0 +1,85 @@
+@import "compass/css3";
+
+$icon-size: 2.5em;
+$color1: rgb(05, 19, 25);
+$color2: rgb(225, 121, 25);
+$color3: rgb(72, 195, 225);
+$color4: rgb(180, 20, 110);
+$shape-color: $color2;
+html { height: 100% }
+body {
+	display: flex;
+	font-family: 'Open Sans', sans-sarif;
+	font-size: 16px;
+	background-color: $color1;
+	height: 100%;
+	width: 100%;
+}
+
+#root-element {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.shape-container {
+	display: flex;
+	width: 8em;
+	height: 8em;
+	align-items: center;
+	justify-content: center;
+}
+
+.shape {
+	width: $icon-size;
+	height:  $icon-size;	
+}
+
+.circle {
+	background-color: $shape-color;
+	border-radius: $icon-size;
+}
+
+.heart {
+	position: relative;
+	
+	& > div {
+		background-color: $color4;
+		position: absolute;
+		width: 55%;
+		height: 55%;
+		
+		&:nth-child(1) {
+			border-radius: 50%;
+			left: 0;
+			top: 11%;
+		}
+		
+		&:nth-child(2) {
+			position: absolute;
+			border-radius: 50%;
+			top: 11%;
+			right: 0;
+		}
+		
+		&:nth-child(3) {
+			position: absolute;
+			transform: rotate(45deg);
+			border-radius: 15% 0 15% 0;
+			width: 58%;
+			height: 58%;
+			right: 21%;
+			bottom: 11%;
+		}
+	}
+}
+
+.square {
+	background-color: $color3;
+	border-radius: 15%;
+}
+.shape-wrapper {
+	position: relative;
+}

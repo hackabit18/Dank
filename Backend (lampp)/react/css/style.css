@@ -1,0 +1,85 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  font-family: 'Open Sans', sans-sarif;
+  font-size: 16px;
+  background-color: #051319;
+  height: 100%;
+  width: 100%;
+}
+
+#root-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.shape-container {
+  display: flex;
+  width: 8em;
+  height: 8em;
+  align-items: center;
+  justify-content: center;
+}
+
+.shape {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.circle {
+  background-color: #e17919;
+  border-radius: 2.5em;
+}
+
+.heart {
+  position: relative;
+}
+.heart > div {
+  background-color: #b4146e;
+  position: absolute;
+  width: 55%;
+  height: 55%;
+}
+.heart > div:nth-child(1) {
+  border-radius: 50%;
+  left: 0;
+  top: 11%;
+}
+.heart > div:nth-child(2) {
+  position: absolute;
+  border-radius: 50%;
+  top: 11%;
+  right: 0;
+}
+.heart > div:nth-child(3) {
+  position: absolute;
+  transform: rotate(45deg);
+  border-radius: 15% 0 15% 0;
+  width: 58%;
+  height: 58%;
+  right: 21%;
+  bottom: 11%;
+}
+
+.square {
+  background-color: #48c3e1;
+  border-radius: 15%;
+}
+
+.shape-wrapper {
+  position: relative;
+}
+.shape-pulse {
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  position: absolute;
+  opacity: 0.5;
+  transform: scale(1, 1);
+  top: 0;
+  left: 0;
+}

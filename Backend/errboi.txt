@@ -1,1 +1,0 @@
-teri maaaaaaa'ascii' codec can't encode character '\u2019' in position 38: ordinal not in range(128)

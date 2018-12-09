@@ -1,209 +1,128 @@
-    
-
-
-         
-  
-  
-<?php 
-//echo shell_exec("python3 /var/www/html/speechy.py");
-//echo "2";
-
-
+<?php
  ?>
 
 <!DOCTYPE html>
-
 <html>
-
     <head>
-<script src="ace/ext-language_tools.js" ></script>
- <title>Code Editor</title>
-<style type="text/css" media="screen">
-    #editor { 
-position:absolute;       
-      top:100px;
-width:60%;
+        <script src="ace/ext-language_tools.js" ></script>
+        <title>Code Editor</title>
+        <style type="text/css" media="screen">
+            #editor { 
+                position:absolute;       
+                top:100px;
+                width:60%;
+                height:600px;
+                left: 10%;
+            }
+            #editor2 { 
+                position:absolute;       
+                top:100px;
+                margin-left:2px;
+                width:20%;
+                height:600px;
+                right: 10%;
+            }
+            #editor3 { 
+                position:absolute;       
+                top:700px;
+                margin-left:2px;
+                width:80%;
+                height:90px;
+                left: 10%;
+            }
+            body {
+                padding: 20px;
+                background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg);
+            }
+            button {
+                margin-top: 720px;
+                line-height: 60px;
+                font-weight: bold;
+                padding: 0 40px;
+                border: none;
+            }
+            body {
+                font: 400 15px/1.8 Lato, sans-serif;
+                color: #777;
+            }
+            textarea {
+                resize: none;
+            }
+            body {font-family: Arial, Helvetica, sans-serif;}
+            * {box-sizing: border-box;}
 
-height:600px;
-        left: 10%;
-    }
- #editor2 { 
-position:absolute;       
-      top:100px;
-margin-left:2px;
-width:20%;
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+            .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+        </style>
 
-height:600px;
-        right: 10%;
-    }
-
-#editor3 { 
-position:absolute;       
-      top:700px;
-margin-left:2px;
-width:80%;
-
-height:90px;
-        left: 10%;
-    }
-
-
-</style>
-<style>
-                        body {
-                                padding: 20px;
-background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg);
-                        }
-                        button {
-                                margin-top: 720px;
-                                line-height: 60px;
-                                font-weight: bold;
-                                padding: 0 40px;
-                                border: none;
-                        }
-                </style>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
-
-
-
-
-
-
-
-
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-        <title>Live input record and playback</title>
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <style>
-  body {
-      font: 400 15px/1.8 Lato, sans-serif;
-      color: #777;
-  }
-  textarea {
-      resize: none;
-  }
-  </style>
-
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
 
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+        <form id="topic_search_form" onSubmit="return false;" style="margin-top:790px;position:relative;left:45%;"  name="topic_search_form" action="">
+            <input type="submit" class="topic_submit" name="topic_submit" value="Execute" >
+        </form>
+        <script>
+            var arrq=[];
+            var outputfile=[];
+            $(function() {
+                $(".topic_submit").click(function() {
+                    var topic = (editor.getValue());
+                    var topic2= (editortxt.getValue());
+                    refresh = 'false'
+                    $.ajax({  
+                        type: "POST",
+                        //  url:"fdf9924a.ngrok.io/sendhelp/php123.php",  
+                        url: "testthing123321.php?idd="+topic,  
+                        data: {'topic': topic+"###@@@#@"+topic2},  
+                        success: function(dataString) {
+                    $("#lolwut").load("graphic.php");
+                    arrq=dataString.toString().split("ppppp")[1].split("</stdio.h>")[0].toString().split("\n");
+                    document.cookie = "username="+arrq[0]+"; ";
+                    outputfile= dataString.toString().split("tttttttttt")[0].split("uuuuu")[2].split("\n");
+                    var k="";
+                    for (i = 0; i < outputfile.length; i++) {
+                    if (outputfile[i]==k)
+                        outputfile[i]="@@@@@@#####";
+                    }
+                }             
+            document.getElementById("clicker").click();
+            $("#container").append("<b>Appended text</b>");
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-
- 
-
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-</style>
-
-<form id="topic_search_form" onSubmit="return false;" style="margin-top:790px;position:relative;left:45%;"  name="topic_search_form" action="">
-
-<input type="submit" class="topic_submit" name="topic_submit" value="Execute" >
-
- </form>
-    <script>
-var arrq=[];
-var outputfile=[];
-$(function() {
-
-//$("#lolwut2").load("ace_edit.php");  
-//var editor = ace.edit("editor");
- //   editor.setTheme("ace/theme/monokai");
-   // editor.session.setMode("ace/mode/javascript");
-//alert(editor.getValue());
-//var code = editor.getValue();
-//alert("www");
-//alert(code)
-$(".topic_submit").click(function() {    
-//alert("clicked");  
-   // var topic = $("#topic").val();
-var topic = (editor.getValue());
-//alert(topic);
-var topic2= (editortxt.getValue());
-    refresh = 'false'
- $.ajax({  
-        type: "POST",
-      //  url:"fdf9924a.ngrok.io/sendhelp/php123.php",  
-        url: "testthing123321.php?idd="+topic,  
-        data: {'topic': topic+"###@@@#@"+topic2},  
-        success: function(dataString) {  
-//alert(dataString);
-//document.getElementById("lolwut3").innerHTML = dataString.toString();
-//alert("boa");
-$("#lolwut").load("graphic.php");
-//window.location='graphic.php';
-// timeout: 10000 
-arrq=dataString.toString().split("ppppp")[1].split("</stdio.h>")[0].toString().split("\n");
-document.cookie = "username="+arrq[0]+"; ";
- outputfile= dataString.toString().split("tttttttttt")[0].split("uuuuu")[2].split("\n");
-//alert(dataString.toString().split("tttttttttt")[0].split("uuuuu")[1].split("\n")[4]);
-//var newarr=[];
-var k="";
-for (i = 0; i < outputfile.length; i++) {
-  if (outputfile[i]==k){
-
-outputfile[i]="@@@@@@#####";
-
-}
-
-//alert(outputfile[i]+outputfile[i].length);
- //window.location = "indexlatest.php";
-//alert(outputfile[i]);
-//////////////////////alert(arr[i]);
-}
-//  alert(outputfile[3]);              
-document.getElementById("clicker").click();
-$("#container").append("<b>Appended text</b>");
-
-      //      alert("boa");
-//alert(dataString);
-        },    
+            },    
 
                             error: function() {
 
@@ -216,8 +135,7 @@ $("#container").append("<b>Appended text</b>");
   timeout: 1    });  
 });
 
-     
-//alert(outputfile[3]);
+
 
     </script>
 

@@ -1,0 +1,1390 @@
+Breakpoint 1 at 0xeb9: file h.cpp, line 77.
+
+Breakpoint 1, main () at h.cpp:77
+77	{ 
+
+Breakpoint 1, main () at h.cpp:77
+77	{ 
+g = {V = 1431656784, adj = 0x555555554ac0 <_start>}
+type = class Graph {
+  private:
+    int V;
+    std::list<int> *adj;
+
+  public:
+    Graph(int);
+    void addEdge(int, int);
+    void BFS(int);
+}
+Breakpoint 2 at 0x555555554ec8: file h.cpp, line 79.
+
+Breakpoint 2, main () at h.cpp:79
+79	    Graph g(4); 
+g = {V = 1431656784, adj = 0x555555554ac0 <_start>}
+type = class Graph {
+  private:
+    int V;
+    std::list<int> *adj;
+
+  public:
+    Graph(int);
+    void addEdge(int, int);
+    void BFS(int);
+}
+Breakpoint 3 at 0x555555554ed9: file h.cpp, line 80.
+
+Breakpoint 3, main () at h.cpp:80
+80	    g.addEdge(0, 1); 
+g = {V = 1431656784, adj = 0x555555554ac0 <_start>}
+type = class Graph {
+  private:
+    int V;
+    std::list<int> *adj;
+
+  public:
+    Graph(int);
+    void addEdge(int, int);
+    void BFS(int);
+}
+Breakpoint 4 at 0x555555554eef: file h.cpp, line 81.
+
+Breakpoint 4, main () at h.cpp:81
+81	    g.addEdge(0, 2); 
+g = {V = 1431656784, adj = 0x555555554ac0 <_start>}
+type = class Graph {
+  private:
+    int V;
+    std::list<int> *adj;
+
+  public:
+    Graph(int);
+    void addEdge(int, int);
+    void BFS(int);
+}
+Breakpoint 5 at 0x555555554f05: file h.cpp, line 82.
+
+Breakpoint 5, main () at h.cpp:82
+82	    g.addEdge(1, 2); 
+g = {V = 1431656784, adj = 0x555555554ac0 <_start>}
+type = class Graph {
+  private:
+    int V;
+    std::list<int> *adj;
+
+  public:
+    Graph(int);
+    void addEdge(int, int);
+    void BFS(int);
+}
+Breakpoint 6 at 0x555555554f1b: file h.cpp, line 83.
+
+Breakpoint 6, main () at h.cpp:83
+83	    g.addEdge(2, 0); 
+g = {V = 1431656784, adj = 0x555555554ac0 <_start>}
+type = class Graph {
+  private:
+    int V;
+    std::list<int> *adj;
+
+  public:
+    Graph(int);
+    void addEdge(int, int);
+    void BFS(int);
+}
+Breakpoint 7 at 0x555555554f31: file h.cpp, line 84.
+
+Breakpoint 7, main () at h.cpp:84
+84	    g.addEdge(2, 3); 
+g = {V = 1431656784, adj = 0x555555554ac0 <_start>}
+type = class Graph {
+  private:
+    int V;
+    std::list<int> *adj;
+
+  public:
+    Graph(int);
+    void addEdge(int, int);
+    void BFS(int);
+}
+Breakpoint 8 at 0x555555554f47: file h.cpp, line 85.
+
+Breakpoint 8, main () at h.cpp:85
+85	    g.addEdge(3, 3); 
+g = {V = 1431656784, adj = 0x555555554ac0 <_start>}
+type = class Graph {
+  private:
+    int V;
+    std::list<int> *adj;
+
+  public:
+    Graph(int);
+    void addEdge(int, int);
+    void BFS(int);
+}
+Breakpoint 9 at 0x555555554f5d: file h.cpp, line 88.
+
+Breakpoint 9, main () at h.cpp:88
+88	         << "(starting from vertex 2) \n"; 
+g = {V = 1431656784, adj = 0x555555554ac0 <_start>}
+type = class Graph {
+  private:
+    int V;
+    std::list<int> *adj;
+
+  public:
+    Graph(int);
+    void addEdge(int, int);
+    void BFS(int);
+}
+Breakpoint 10 at 0x555555554f7f: file h.cpp, line 89.
+
+Breakpoint 10, main () at h.cpp:89
+89	    g.BFS(2); 
+g = {V = 1431656784, adj = 0x555555554ac0 <_start>}
+type = class Graph {
+  private:
+    int V;
+    std::list<int> *adj;
+
+  public:
+    Graph(int);
+    void addEdge(int, int);
+    void BFS(int);
+}
+Breakpoint 11 at 0x555555554cb8: file h.cpp, line 37.
+Line 37 is not in `main()'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 11, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:37
+37	{ 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 12 at 0x555555554cc7: file h.cpp, line 39.
+
+Breakpoint 12, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:39
+39	    bool *visited = new bool[V]; 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 13 at 0x555555554cdb: file h.cpp, line 40.
+
+Breakpoint 13, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:40
+40	    for(int i = 0; i < V; i++) 
+i = 32767
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = int
+type = bool *
+type = std::list<int>
+type = int
+Breakpoint 14 at 0x555555554ced: file h.cpp, line 41.
+
+Breakpoint 14, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:41
+41	        visited[i] = false; 
+i = 32767
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = int
+type = bool *
+type = std::list<int>
+type = int
+Breakpoint 15 at 0x555555554ced: file h.cpp, line 41.
+
+Breakpoint 14, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:41
+41	        visited[i] = false; 
+i = 32767
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = int
+type = bool *
+type = std::list<int>
+type = int
+Breakpoint 16 at 0x555555554ced: file h.cpp, line 41.
+
+Breakpoint 14, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:41
+41	        visited[i] = false; 
+i = 32767
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = int
+type = bool *
+type = std::list<int>
+type = int
+Breakpoint 17 at 0x555555554ced: file h.cpp, line 41.
+
+Breakpoint 14, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:41
+41	        visited[i] = false; 
+i = 32767
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = int
+type = bool *
+type = std::list<int>
+type = int
+Breakpoint 18 at 0x555555554d03: file h.cpp, line 44.
+
+Breakpoint 18, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:44
+44	    list<int> queue; 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 19 at 0x555555554d0f: file h.cpp, line 47.
+
+Breakpoint 19, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:47
+47	    visited[s] = true; 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 20 at 0x555555554d1f: file h.cpp, line 48.
+
+Breakpoint 20, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:48
+48	    queue.push_back(s); 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 21 at 0x555555554d32: file h.cpp, line 52.
+
+Breakpoint 21, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:52
+52	    list<int>::iterator i; 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 22 at 0x555555554d3e: file h.cpp, line 54.
+
+Breakpoint 22, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:54
+54	    while(!queue.empty()) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 23 at 0x555555554d55: file h.cpp, line 57.
+
+Breakpoint 23, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:57
+57	        s = queue.front(); 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 24 at 0x555555554d66: file h.cpp, line 58.
+
+Breakpoint 24, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:58
+58	        cout << s << " "; 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 25 at 0x555555554d86: file h.cpp, line 59.
+
+Breakpoint 25, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:59
+59	        queue.pop_front(); 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 26 at 0x555555554d92: file h.cpp, line 64.
+
+Breakpoint 26, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:64
+64	        for (i = adj[s].begin(); i != adj[s].end(); ++i) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 27 at 0x555555554e01: file h.cpp, line 66.
+
+Breakpoint 27, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:66
+66	            if (!visited[*i]) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 28 at 0x555555554e23: file h.cpp, line 68.
+
+Breakpoint 28, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:68
+68	                visited[*i] = true; 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 29 at 0x555555554e3e: file h.cpp, line 69.
+
+Breakpoint 29, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:69
+69	                queue.push_back(*i); 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 30 at 0x555555554e01: file h.cpp, line 66.
+
+Breakpoint 27, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:66
+66	            if (!visited[*i]) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 31 at 0x555555554e23: file h.cpp, line 68.
+
+Breakpoint 28, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:68
+68	                visited[*i] = true; 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 32 at 0x555555554e3e: file h.cpp, line 69.
+
+Breakpoint 29, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:69
+69	                queue.push_back(*i); 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 33 at 0x555555554d3e: file h.cpp, line 54.
+
+Breakpoint 22, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:54
+54	    while(!queue.empty()) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 34 at 0x555555554d55: file h.cpp, line 57.
+
+Breakpoint 23, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:57
+57	        s = queue.front(); 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 35 at 0x555555554d66: file h.cpp, line 58.
+
+Breakpoint 24, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:58
+58	        cout << s << " "; 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 36 at 0x555555554d86: file h.cpp, line 59.
+
+Breakpoint 25, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:59
+59	        queue.pop_front(); 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 37 at 0x555555554d92: file h.cpp, line 64.
+
+Breakpoint 26, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:64
+64	        for (i = adj[s].begin(); i != adj[s].end(); ++i) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 38 at 0x555555554e01: file h.cpp, line 66.
+
+Breakpoint 27, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:66
+66	            if (!visited[*i]) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 39 at 0x555555554e23: file h.cpp, line 68.
+
+Breakpoint 28, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:68
+68	                visited[*i] = true; 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 40 at 0x555555554e3e: file h.cpp, line 69.
+
+Breakpoint 29, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:69
+69	                queue.push_back(*i); 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 41 at 0x555555554e01: file h.cpp, line 66.
+
+Breakpoint 27, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:66
+66	            if (!visited[*i]) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 42 at 0x555555554d3e: file h.cpp, line 54.
+
+Breakpoint 22, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:54
+54	    while(!queue.empty()) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 43 at 0x555555554d55: file h.cpp, line 57.
+
+Breakpoint 23, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:57
+57	        s = queue.front(); 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 44 at 0x555555554d66: file h.cpp, line 58.
+
+Breakpoint 24, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:58
+58	        cout << s << " "; 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 45 at 0x555555554d86: file h.cpp, line 59.
+
+Breakpoint 25, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:59
+59	        queue.pop_front(); 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 46 at 0x555555554d92: file h.cpp, line 64.
+
+Breakpoint 26, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:64
+64	        for (i = adj[s].begin(); i != adj[s].end(); ++i) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 47 at 0x555555554e01: file h.cpp, line 66.
+
+Breakpoint 27, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:66
+66	            if (!visited[*i]) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 48 at 0x555555554d3e: file h.cpp, line 54.
+
+Breakpoint 22, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:54
+54	    while(!queue.empty()) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 49 at 0x555555554d55: file h.cpp, line 57.
+
+Breakpoint 23, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:57
+57	        s = queue.front(); 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 50 at 0x555555554d66: file h.cpp, line 58.
+
+Breakpoint 24, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:58
+58	        cout << s << " "; 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 51 at 0x555555554d86: file h.cpp, line 59.
+
+Breakpoint 25, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:59
+59	        queue.pop_front(); 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 52 at 0x555555554d92: file h.cpp, line 64.
+
+Breakpoint 26, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:64
+64	        for (i = adj[s].begin(); i != adj[s].end(); ++i) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 53 at 0x555555554e01: file h.cpp, line 66.
+
+Breakpoint 27, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:66
+66	            if (!visited[*i]) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 54 at 0x555555554d3e: file h.cpp, line 54.
+
+Breakpoint 22, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:54
+54	    while(!queue.empty()) 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 55 at 0x555555554e79: file h.cpp, line 73.
+
+Breakpoint 55, Graph::BFS (this=0x10000ffff, s=121) at h.cpp:73
+73	} 
+visited = 0x55555555599d <__libc_csu_init+77>
+queue = std::__cxx11::list = {[0] = 629885992<error reading variable: Cannot access memory at address 0x56415741e5894855>...}
+i = -1017253819
+type = bool *
+type = std::list<int>
+type = struct std::_List_iterator<int> {
+    std::__detail::_List_node_base *_M_node;
+  public:
+    _List_iterator(void);
+    _List_iterator(std::__detail::_List_node_base *);
+    _Self _M_const_cast(void) const;
+    reference operator*(void) const;
+    pointer operator->(void) const;
+    _Self & operator++(void);
+    _Self operator++(int);
+    _Self & operator--(void);
+    _Self operator--(int);
+    bool operator==(const _Self &) const;
+    bool operator!=(const _Self &) const;
+
+    typedef std::_List_iterator<int> _Self;
+    typedef std::_List_node<int> _Node;
+    typedef int *pointer;
+    typedef int &reference;
+}
+Breakpoint 56 at 0x555555554f90: file h.cpp, line 91.
+Line 91 is not in `Graph::BFS(int)'.  Jump anyway? (y or n) [answered Y; input not from terminal]
+
+Breakpoint 56, main () at h.cpp:91
+91	    return 0; 
+g = {V = 1431656784, adj = 0x555555554ac0 <_start>}
+type = class Graph {
+  private:
+    int V;
+    std::list<int> *adj;
+
+  public:
+    Graph(int);
+    void addEdge(int, int);
+    void BFS(int);
+}

@@ -1,4 +1,4 @@
-# Dank
+# Game To Debug
 
 ## Idea
 
@@ -13,18 +13,8 @@ When we write a computer program there are many things that our IDE handles in t
 * JavaScript
 
 ## Instructions to Run
-* The application is hosted at dank.gametodebug.tech
+* The application is hosted at http://ec2-18-217-122-178.us-east-2.compute.amazonaws.com/index.php
 * You can add your code directly to the code editor.
-
-### OR
-
-* Clone the repository.
-* Put the code in the h.cpp file in the gdb folder.
-* Run the new.py script in the gdb folder.
-* Certain new files will be generated in the gdb folder, among which, logFile.txt and new_datatypes.txt are the log files that will be used to generate the debugger.
-* In case these files are empty, check the error.txt file for any errors and try again after removing any bugs.
-* We're sending a request from AWS to localhost using a POST request, thus we get the required log files which we parse in PHP, and then we read them as lists in JavaScript.
-* Finally, we use HTML, CSS and JavaScript to display the debugging details in an accordion format on the webpage. For this, open temp_code.html.
 
 ## Applications and Future Scope
 
